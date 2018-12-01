@@ -2,9 +2,17 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #525ddc
+  primary: #525ddc,
+  secondary: rgb(148, 159, 151)
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
-$navbar-light-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: gray;
+
+/* breakpoints */
+$screen_small: 320px;
+$screen_phone: 411px;
+$screen_tablet: 768px;
+$screen_iPadPro: 1024px;
+$screen_desktop: 1280px;

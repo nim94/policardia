@@ -1,0 +1,39 @@
+footer.content-info {
+  background: rgb(148, 159, 151);
+  padding: 10px;
+}
+
+.text-footer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social_footer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    margin: 5px;
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+.funder35 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    width: 150px;
+  }
+}
