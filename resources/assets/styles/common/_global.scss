@@ -1,0 +1,11 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: map-get($map: $theme-colors, $key: primary);
+}

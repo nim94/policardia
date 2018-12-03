@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+
+@font-face {
+  font-family: "bite_bullet";
+  src: url(../fonts/bite_bullet/Bite__Bullet.ttf);
+  src: url(../fonts/bite_bullet/Bite___Bullet.eot);
+  src: url(../fonts/bite_bullet/Bite___Bullet.svg);
+  src: url(../fonts/bite_bullet/Bite___Bullet.woff);
+  src: url(../fonts/bite_bullet/Bite___Bullet.woff2);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "bite_bullet", serif !important;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif !important;
+}

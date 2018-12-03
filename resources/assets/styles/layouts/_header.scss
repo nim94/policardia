@@ -4,6 +4,8 @@
 
 .banner .nav a {
   @extend .nav-link;
+
+  padding: 0;
 }
 
 div.social_links {
@@ -42,6 +44,16 @@ div.center {
       flex: 1;
       justify-content: space-between;
       flex-direction: row;
+
+      a {
+        font-family: "bite_bullet", serif;
+        font-size: 30px;
+        color: map-get($map: $theme-colors, $key: primary);
+      }
+
+      li:hover a {
+        color: map-get($map: $theme-colors, $key: secondary);
+      }
     }
   }
 }
@@ -68,6 +80,11 @@ div.center {
     display: flex;
     flex-direction: column;
     flex: 1;
+
+    a {
+      font-family: "bite_bullet", serif;
+      font-size: 30px;
+    }
   }
 }
 

@@ -1,6 +1,11 @@
 footer.content-info {
-  background: rgb(148, 159, 151);
+  background: map-get($map: $theme-colors, $key: secondary);
   padding: 10px;
+  color: white;
+
+  div.container div.row div {
+    margin: 5px auto;
+  }
 }
 
 .text-footer {
@@ -8,19 +13,20 @@ footer.content-info {
   flex: 1;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
+
+  a {
+    color: white;
+    font-size: 14px;
+  }
 }
 
 .social_footer {
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-
-  div {
-    margin: 5px;
-  }
 
   img {
     width: 50px;
