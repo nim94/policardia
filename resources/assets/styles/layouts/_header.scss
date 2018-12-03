@@ -49,10 +49,16 @@ div.center {
         font-family: "bite_bullet", serif;
         font-size: 30px;
         color: map-get($map: $theme-colors, $key: primary);
+        transition: all 300ms;
       }
 
       li:hover a {
-        color: map-get($map: $theme-colors, $key: secondary);
+        color: map-get($map: $theme-colors, $key: hover);
+
+        &:active {
+          transform: scale(5px);
+          color: map-get($map: $theme-colors, $key: secondary);
+        }
       }
     }
   }

@@ -2,8 +2,9 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #c19951,
-  secondary: rgb(148, 159, 151)
+  primary: rgb(193, 153, 81),
+  secondary: rgba(0, 0, 0, 0.6),
+  hover: rgb(215, 184, 8),
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
