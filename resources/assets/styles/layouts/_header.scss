@@ -52,13 +52,13 @@ div.center-logo {
         transition: 300ms all;
       }
 
+      li.current_page_item a {
+        font-size: 33px;
+        color: map-get($map: $theme-colors, $key: secondary);
+      }
+
       li:hover a {
         color: map-get($map: $theme-colors, $key: hover);
-
-        &:active {
-          transform: scale(5px);
-          color: map-get($map: $theme-colors, $key: secondary);
-        }
       }
     }
   }
