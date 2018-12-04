@@ -9,3 +9,20 @@ h2 {
   font-weight: 700;
   color: map-get($map: $theme-colors, $key: primary);
 }
+
+img.bw {
+  filter: grayscale(100%);
+  transition: 300ms all;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+img.width-250 {
+  width: 250px !important;
+}
+
+.center-content {
+  text-align: center !important;
+}

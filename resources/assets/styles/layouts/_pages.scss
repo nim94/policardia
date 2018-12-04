@@ -60,7 +60,7 @@ a.section_title_link {
   }
 }
 
-.owl-carousel {
+.slider {
   height: 100%;
 
   div {
@@ -70,13 +70,28 @@ a.section_title_link {
     align-items: center;
   }
 
-  .owl-item {
-    &:not(.active) {
-      visibility: hidden;
-    }
+  .owl-item:not(.active) {
+    visibility: hidden;
+  }
+}
+
+.slider-policardia {
+  height: 100%;
+  display: inline-flex;
+
+  div {
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .owl-item:not(.active) div.item {
+    transition: all 300ms;
 
     img {
-      width: 250px;
+      width: 50% !important;
+      opacity: 0.5;
     }
   }
 }

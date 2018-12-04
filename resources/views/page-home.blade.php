@@ -10,7 +10,7 @@
             </div>    
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt=""></div>
+                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="" class="bw width-250"></div>
                     <div class="item"><h4>2</h4></div>
                     <div class="item"><h4>3</h4></div>
                     <div class="item"><h4>4</h4></div>
@@ -35,7 +35,7 @@
             </div>
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt=""></div>
+                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="" class="bw width-250"></div>
                     <div class="item"><h4>2</h4></div>
                     <div class="item"><h4>3</h4></div>
                     <div class="item"><h4>4</h4></div>
@@ -62,7 +62,7 @@
             </div>    
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt=""></div>
+                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="" class="bw width-250"></div>
                     <div class="item"><h4>2</h4></div>
                     <div class="item"><h4>3</h4></div>
                     <div class="item"><h4>4</h4></div>
@@ -87,7 +87,7 @@
             </div>
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt=""></div>
+                    <div class="item"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="" class="bw width-250"></div>
                     <div class="item"><h4>2</h4></div>
                     <div class="item"><h4>3</h4></div>
                     <div class="item"><h4>4</h4></div>
