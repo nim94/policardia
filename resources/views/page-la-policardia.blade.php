@@ -25,17 +25,17 @@
             </div>
             <p> {!! get_the_content() !!} </p>
             <h2 class="center-content"> ANDREA ELODIE MORETTI </h2>
-            <img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="Andrea Elodie Moretti" class="w-25">
+            <img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="Andrea Elodie Moretti" class="width-250">
             <p> @if( $descrizione = get_field('andrea_descrizione') ) {!! $descrizione !!} </p> @endif
             <div class="row end_page_buttons">
                 <div class="col-sm-12 col-md-4">
-                    <a href="{{ get_permalink(11) }}"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="Centro di Creazione Internazionale" class="bw width-250"></a>
+                    <a href="{{ get_permalink(11) }}"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="Centro di Creazione Internazionale" class="bw w-75 mt-1"></a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <a href="{{ get_permalink(9) }}"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="La Compagnia" class="bw width-250"></a>
+                    <a href="{{ get_permalink(9) }}"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="La Compagnia" class="bw w-75 mt-1"></a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <a href="{{ get_permalink(13) }}"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="La Formazione" class="bw width-250"></a>
+                    <a href="{{ get_permalink(13) }}"><img src="{{get_stylesheet_directory_uri()}}\assets\images\policardia\policardi4.png" alt="La Formazione" class="bw w-75 mt-1"></a>
                 </div>
             </div>
         </div> {{-- !center --}}

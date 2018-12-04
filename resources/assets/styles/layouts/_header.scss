@@ -87,9 +87,14 @@ div.center-logo {
     flex-direction: column;
     flex: 1;
 
-    a {
+    li a {
       font-family: "bite_bullet", serif;
       font-size: 30px;
+    }
+
+    li.current_page_item a {
+      font-size: 33px;
+      color: map-get($map: $theme-colors, $key: secondary);
     }
   }
 }
