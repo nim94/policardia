@@ -1,3 +1,8 @@
+/* Overriding owl-carousel custom css */
+.owl-carousel .owl-item img {
+  width: unset;
+}
+
 .content {
   margin: 20px auto;
 }
@@ -92,6 +97,76 @@ a.section_title_link {
     img {
       width: 50% !important;
       opacity: 0.5;
+    }
+  }
+}
+
+/* Pagina La Compagnia */
+.curriculum {
+  width: 150px;
+  height: 150px;
+  border: 1px solid map-get($map: $theme-colors, $key: primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  transition: all 300ms;
+
+  &:hover {
+    cursor: pointer;
+    background: map-get($map: $theme-colors, $key: primary);
+
+    a {
+      color: white;
+    }
+  }
+
+  .curriculum_button {
+    font-family: "bite_bullet", serif;
+    color: map-get($map: $theme-colors, $key: primary);
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+  }
+}
+
+.slider-compagnia {
+  .item_flex {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div {
+      margin: 5px;
+    }
+
+    @media (min-width: $screen_tablet) {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+
+  .owl-dots {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    .owl-dot {
+      width: 5px;
+      height: 5px;
+      background: map-get($map: $theme-colors, $key: secondary);
+      margin: 0 2px;
+      opacity: 0.5;
+      border-radius: 50%;
+
+      &.active {
+        background: map-get($map: $theme-colors, $key: primary);
+        opacity: 1;
+      }
     }
   }
 }

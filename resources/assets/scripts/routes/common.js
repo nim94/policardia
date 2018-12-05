@@ -8,7 +8,8 @@ export default {
       center: true,
       items: 1,
       loop: true,
-      margin: 10,
+      margin: 5,
+      dots: true,
     });
   },
 };

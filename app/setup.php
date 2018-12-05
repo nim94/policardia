@@ -32,6 +32,8 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
+    
+    /* Enable excerpt on pages */
     add_post_type_support( 'page', 'excerpt' );
 
     /**
@@ -130,4 +132,35 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+});
+
+add_action('init', function(){
+
+    $args = array(
+        'labels'             => array( 
+            'name'                          => 'Attori', 
+            'singular_name'                 => 'Attore',
+            'add_new'                       => 'Aggiungi nuovo Attore', 
+            'add_new_item'                  => 'Aggiungi nuovo Attore', 
+            'new_item'                      => 'Nuovo Attore',
+            'edit_item'                     => 'Modifica Attore',
+            'view_item'                     => 'Visualizza Attore',
+            'all_items'                     => 'Tutti gli Attori',
+        ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'attori' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'menu_icon'          => 'dashicons-universal-access',
+    );
+
+    register_post_type( 'attori', $args );
+
 });
