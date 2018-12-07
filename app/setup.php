@@ -154,7 +154,7 @@ add_action('init', function(){
         'query_var'          => true,
         'rewrite'            => array( 'slug' => 'attori' ),
         'capability_type'    => 'post',
-        'has_archive'        => true,
+        'has_archive'        => false,
         'hierarchical'       => false,
         'menu_position'      => null,
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
@@ -162,5 +162,59 @@ add_action('init', function(){
     );
 
     register_post_type( 'attori', $args );
+
+    $args_maestri = array(
+        'labels'             => array( 
+            'name'                          => 'Maestri', 
+            'singular_name'                 => 'Maestro',
+            'add_new'                       => 'Aggiungi nuovo Maestro', 
+            'add_new_item'                  => 'Aggiungi nuovo Maestro', 
+            'new_item'                      => 'Nuovo Maestro',
+            'edit_item'                     => 'Modifica Maestro',
+            'view_item'                     => 'Visualizza Maestro',
+            'all_items'                     => 'Tutti i Maestri',
+        ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'maestri' ),
+        'capability_type'    => 'post',
+        'has_archive'        => false,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'menu_icon'          => 'dashicons-awards',
+    );
+
+    register_post_type( 'maestri', $args_maestri );
+
+    $args_formatori = array(
+        'labels'             => array( 
+            'name'                          => 'Formatori', 
+            'singular_name'                 => 'Formatore',
+            'add_new'                       => 'Aggiungi nuovo Formatore', 
+            'add_new_item'                  => 'Aggiungi nuovo Formatore', 
+            'new_item'                      => 'Nuovo Formatore',
+            'edit_item'                     => 'Modifica Formatore',
+            'view_item'                     => 'Visualizza Formatore',
+            'all_items'                     => 'Tutti i Formatori',
+        ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'formatori' ),
+        'capability_type'    => 'post',
+        'has_archive'        => false,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'menu_icon'          => 'dashicons-awards',
+    );
+
+    register_post_type( 'formatori', $args_formatori );
 
 });

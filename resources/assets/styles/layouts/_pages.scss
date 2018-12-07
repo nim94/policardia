@@ -1,6 +1,7 @@
 /* Overriding owl-carousel custom css */
-.owl-carousel .owl-item img {
-  width: unset;
+.slider-compagnia .owl-carousel .owl-item img {
+  width: 300px !important;
+  height: 300px !important;
 }
 
 .content {
@@ -169,4 +170,19 @@ a.section_title_link {
       }
     }
   }
+}
+
+/* Pagina CCI */
+.maestro {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  .nome_maestro {
+    margin: 5px 0 0 0;
+  }
+}
+
+/* Pagina La Formazione */
+.single_link_formazione {
+  margin-bottom: 10px;
 }

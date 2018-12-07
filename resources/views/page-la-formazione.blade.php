@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="center-content">
-            <h1 class="center-content"> {!! get_the_title() !!} </h1>
+            <h1 class="center-content"> FORMAZIONE </h1>
             <div class="col-sm-12 col-md-6 slider-policardia">
                 <div class="owl-carousel owl-theme owl-carousel-home">
                     <div class="item"><img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw"></div>
@@ -21,23 +21,24 @@
                 </div>
             </div>
             <p> {!! $post->post_content !!} </p>
-            <div class="row spettacoli">
-                <div class="spettacoli_button col-sm-12 col-md-6">
-                    <a href="#"><img src="@asset('images\policardia\policardi4.png')" alt="Spettacoli" class="bw width-250"></a>
+            <div class="row link_formazione">
+                <div class="col-sm-12 col-md-4 single_link_formazione">
+                    <img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="curriculum">  
-                        <a href="#" class="curriculum_button">CURRICULUM<br />COMPLETO</a>
-                    </div>
+                <div class="col-sm-12 col-md-4 single_link_formazione">
+                    <img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
+                </div>
+                <div class="col-sm-12 col-md-4 single_link_formazione">
+                    <img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
                 </div>
             </div>
-            <h2>GLI ATTORI</h2>
+            <h2> L'EQUIPE DEI FORMATORI </h2>
             <div class="slider-compagnia">
                 <div class="owl-carousel owl-theme owl-carousel-home">
                     @php
-                        $query_attori = new WP_Query( array( 'post_type' => 'attori' ) );
-                        if( $query_attori->have_posts() ) : 
-                            while ( $query_attori->have_posts() ) : $query_attori->the_post();
+                        $query_formatori = new WP_Query( array( 'post_type' => 'formatori' ) );
+                        if( $query_formatori->have_posts() ) : 
+                            while ( $query_formatori->have_posts() ) : $query_formatori->the_post();
                     @endphp
                     <div class="item">
                         <div class="item_flex">      
