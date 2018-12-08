@@ -23,7 +23,7 @@
             <p> {!! $post->post_content !!} </p>
             <div class="row link_formazione">
                 <div class="col-sm-12 col-md-4 single_link_formazione">
-                    <img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
+                    <a href="http://progettovalar.wixsite.com/progettovalar"></a><img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
                 </div>
                 <div class="col-sm-12 col-md-4 single_link_formazione">
                     <img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">

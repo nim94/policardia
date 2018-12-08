@@ -102,6 +102,34 @@ a.section_title_link {
   }
 }
 
+.item_flex {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    //Remove "Continued" read more link from posts excerpts
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  div {
+    margin: 5px;
+  }
+
+  @media (min-width: $screen_tablet) {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
 /* Pagina La Compagnia */
 .curriculum {
   width: 150px;
@@ -133,24 +161,6 @@ a.section_title_link {
 }
 
 .slider-compagnia {
-  .item_flex {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    div {
-      margin: 5px;
-    }
-
-    @media (min-width: $screen_tablet) {
-      flex-direction: row;
-      text-align: left;
-    }
-  }
-
   .owl-dots {
     display: flex;
     flex: 1;

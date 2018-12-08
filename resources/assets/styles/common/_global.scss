@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  color: map-get($map: $theme-colors, $key: text);
 }
 
 h1 {

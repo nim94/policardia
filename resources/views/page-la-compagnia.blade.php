@@ -23,7 +23,7 @@
             <p> {!! $post->post_content !!} </p>
             <div class="row spettacoli">
                 <div class="spettacoli_button col-sm-12 col-md-6">
-                    <a href="#"><img src="@asset('images\policardia\policardi4.png')" alt="Spettacoli" class="bw width-250"></a>
+                    <a href="@php echo esc_url( get_category_link( get_cat_ID( 'spettacoli' ) ) ) @endphp"><img src="@asset('images\policardia\policardi4.png')" alt="Spettacoli" class="bw width-250"></a>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="curriculum">  
