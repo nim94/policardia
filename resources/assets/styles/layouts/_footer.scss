@@ -1,0 +1,45 @@
+footer.content-info {
+  background: map-get($map: $theme-colors, $key: secondary);
+  padding: 10px;
+  color: white;
+
+  div.container div.row div {
+    margin: 5px auto;
+  }
+}
+
+.text-footer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+
+  a {
+    color: white;
+    font-size: 14px;
+  }
+}
+
+.social_footer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  img {
+    width: 50px;
+  }
+}
+
+.funder35 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    width: 150px;
+  }
+}

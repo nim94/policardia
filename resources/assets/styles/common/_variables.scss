@@ -1,0 +1,20 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: rgb(193, 153, 81),
+  secondary: rgba(0, 0, 0, 0.6),
+  hover: rgb(215, 184, 8),
+  text: black,
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: gray;
+
+/* breakpoints */
+$screen_small: 320px;
+$screen_phone: 411px;
+$screen_tablet: 768px;
+$screen_iPadPro: 1024px;
+$screen_desktop: 1280px;

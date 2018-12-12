@@ -1,0 +1,198 @@
+/* Overriding owl-carousel custom css */
+.slider-compagnia .owl-carousel .owl-item img {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.content {
+  margin: 20px auto;
+}
+
+.section_title_container {
+  z-index: 10;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a.section_title_link {
+  text-decoration: none;
+
+  &.left {
+    margin: 0 0 0 auto;
+  }
+
+  &.right {
+    margin: 0 auto 0 0;
+  }
+
+  .section_title {
+    text-align: center;
+
+    @media (min-width: $screen_tablet) {
+      &.left {
+        text-align: right;
+        align-self: flex-end;
+      }
+
+      &.right {
+        text-align: left;
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+.section_toggle_mobile {
+  display: none;
+
+  @media (min-width: $screen_tablet) {
+    display: block;
+
+    &.left {
+      text-align: right;
+    }
+
+    &.right {
+      text-align: left;
+    }
+  }
+}
+
+.section_toggle_desktop {
+  @media (min-width: $screen_tablet) {
+    display: none;
+  }
+}
+
+.slider {
+  height: 100%;
+
+  div {
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .owl-item:not(.active) {
+    visibility: hidden;
+  }
+}
+
+.slider-policardia {
+  height: 100%;
+  display: inline-flex;
+
+  div {
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .owl-item:not(.active) div.item {
+    transition: all 300ms;
+
+    img {
+      width: 50% !important;
+      opacity: 0.5;
+    }
+  }
+}
+
+.item_flex {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    //Remove "Continued" read more link from posts excerpts
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  div {
+    margin: 5px;
+  }
+
+  @media (min-width: $screen_tablet) {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* Pagina La Compagnia */
+.curriculum {
+  width: 150px;
+  height: 150px;
+  border: 1px solid map-get($map: $theme-colors, $key: primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  transition: all 300ms;
+
+  &:hover {
+    cursor: pointer;
+    background: map-get($map: $theme-colors, $key: primary);
+
+    a {
+      color: white;
+    }
+  }
+
+  .curriculum_button {
+    font-family: "bite_bullet", serif;
+    color: map-get($map: $theme-colors, $key: primary);
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+  }
+}
+
+.slider-compagnia {
+  .owl-dots {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    .owl-dot {
+      width: 5px;
+      height: 5px;
+      background: map-get($map: $theme-colors, $key: secondary);
+      margin: 0 2px;
+      opacity: 0.5;
+      border-radius: 50%;
+
+      &.active {
+        background: map-get($map: $theme-colors, $key: primary);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* Pagina CCI */
+.maestro {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  .nome_maestro {
+    margin: 5px 0 0 0;
+  }
+}
+
+/* Pagina La Formazione */
+.single_link_formazione {
+  margin-bottom: 10px;
+}

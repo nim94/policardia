@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "roots/bedrock",
   "type": "project",
   "license": "MIT",
@@ -6,11 +7,26 @@
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
+=======
+  "name": "roots/sage",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "WordPress starter theme with a modern development workflow",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    },
+    {
+>>>>>>> 47b0ee9bad3bcd2d3bbca9d8cf7573c25b0a2ddb
       "name": "Scott Walkinshaw",
       "email": "scott.walkinshaw@gmail.com",
       "homepage": "https://github.com/swalkinshaw"
     },
     {
+<<<<<<< HEAD
       "name": "Ben Word",
       "email": "ben@benword.com",
       "homepage": "https://github.com/retlehs"
@@ -59,6 +75,38 @@
     ],
     "test": [
       "phpcs"
+=======
+      "name": "QWp6t",
+      "email": "hi@qwp6t.me",
+      "homepage": "https://github.com/qwp6t"
+    }
+  ],
+  "keywords": ["wordpress"],
+  "support": {
+    "issues": "https://github.com/roots/sage/issues",
+    "forum": "https://discourse.roots.io/"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "composer/installers": "~1.0",
+    "illuminate/support": "5.6.*",
+    "roots/sage-lib": "~9.0.5",
+    "soberwp/controller": "~2.1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.8.0",
+    "roots/sage-installer": "~1.5"
+  },
+  "scripts": {
+    "test": ["phpcs"],
+    "post-create-project-cmd": [
+      "Roots\\Sage\\Installer\\ComposerScript::postCreateProject"
+>>>>>>> 47b0ee9bad3bcd2d3bbca9d8cf7573c25b0a2ddb
     ]
   }
 }

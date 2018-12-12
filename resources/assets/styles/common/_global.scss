@@ -1,0 +1,41 @@
+html,
+body {
+  overflow-x: hidden;
+  color: map-get($map: $theme-colors, $key: text);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: map-get($map: $theme-colors, $key: primary);
+}
+
+img.bw {
+  filter: grayscale(100%);
+  transition: 300ms all;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+img.width-250 {
+  width: 250px !important;
+}
+
+.center-content {
+  text-align: center !important;
+}
