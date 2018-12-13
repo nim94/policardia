@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+Copyright (c) Roots
+=======
 Copyright (c) Ben Word and Scott Walkinshaw
+>>>>>>> 47b0ee9bad3bcd2d3bbca9d8cf7573c25b0a2ddb
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
