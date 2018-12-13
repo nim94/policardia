@@ -9,7 +9,7 @@
       <div class="col-sm-12 col-lg-4 social_footer">
         <div><a href="https://www.facebook.com/PolicardiaT/"><img src="@asset('images/bianco_facebook.png')" alt="link social facebook"></a></div>
         <div><a href="https://www.instagram.com/policardiateatro/"><img src="@asset('images/bianco_instagram.png')" alt="link social instagram"></a></div>
-        <div><a href="https://www.youtube.com/channel/UC1pKiq6u1HlOMwdJP36dLBg"><img src="@asset('images/bianco_Youtube.png')" alt="link social youtube"></a></div> 
+        <div><a href="https://www.youtube.com/channel/UC1pKiq6u1HlOMwdJP36dLBg"><img src="@asset('images/bianco_Youtube.png')" alt="link social youtube" class="social_img_youtube"></a></div> 
       </div>
       <div class="col-sm-12 col-lg-4 funder35">
         <div><a href="http://funder35.it/"><img src="@asset('images/marchi_funder35.png')" alt="Logo Funder35"></a></div>

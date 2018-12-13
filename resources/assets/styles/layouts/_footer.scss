@@ -29,7 +29,11 @@ footer.content-info {
   align-items: center;
 
   img {
-    width: 50px;
+    width: 60px;
+
+    &.social_img_youtube {
+      height: 60px;
+    }
   }
 }
 

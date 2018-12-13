@@ -1,7 +1,12 @@
 /* Overriding owl-carousel custom css */
 .slider-compagnia .owl-carousel .owl-item img {
-  width: 300px !important;
-  height: 300px !important;
+  width: 250px !important;
+  height: 250px !important;
+
+  @media (min-width: $screen_tablet) {
+    width: 300px !important;
+    height: 300px !important;
+  }
 }
 
 .content {
@@ -19,25 +24,21 @@
 a.section_title_link {
   text-decoration: none;
 
-  &.left {
-    margin: 0 0 0 auto;
-  }
-
-  &.right {
-    margin: 0 auto 0 0;
-  }
-
   .section_title {
     text-align: center;
+    margin: 0 auto;
+    align-self: center;
 
     @media (min-width: $screen_tablet) {
       &.left {
         text-align: right;
+        margin: 0 0 0 auto;
         align-self: flex-end;
       }
 
       &.right {
         text-align: left;
+        margin: 0 auto 0 0;
         align-self: flex-start;
       }
     }
@@ -64,6 +65,14 @@ a.section_title_link {
   @media (min-width: $screen_tablet) {
     display: none;
   }
+}
+
+/* Home sliders */
+.la_policardia,
+.la_compagnia,
+.cci,
+.formazione {
+  margin-bottom: 100px;
 }
 
 .slider {

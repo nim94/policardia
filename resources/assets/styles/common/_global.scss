@@ -34,6 +34,10 @@ img.bw {
 
 img.width-250 {
   width: 250px !important;
+
+  @media (min-width: $screen_tablet) {
+    width: 300px !important;
+  }
 }
 
 .center-content {

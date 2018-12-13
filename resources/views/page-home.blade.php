@@ -9,19 +9,15 @@
                 <p class="section_toggle_mobile left">{{ $post_policardia->post_excerpt }}</p>    
             </div>    
             <div class="col-sm-12 col-md-6 slider">
+                @php
+                    $upload = wp_upload_dir()['baseurl'] . '/2018/12/';
+                @endphp
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="@asset('images\policardia\policardi4.png')" alt="" class="bw width-250"></div>
-                    <div class="item"><h4>2</h4></div>
-                    <div class="item"><h4>3</h4></div>
-                    <div class="item"><h4>4</h4></div>
-                    <div class="item"><h4>5</h4></div>
-                    <div class="item"><h4>6</h4></div>
-                    <div class="item"><h4>7</h4></div>
-                    <div class="item"><h4>8</h4></div>
-                    <div class="item"><h4>9</h4></div>
-                    <div class="item"><h4>10</h4></div>
-                    <div class="item"><h4>11</h4></div>
-                    <div class="item"><h4>12</h4></div>
+                        @php echo '<div class="item"><img src="'.$upload.'policardia1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'policardia2.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'policardia3.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'policardi4.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'policardia5.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 section_toggle_desktop">
@@ -35,18 +31,11 @@
             </div>
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="@asset('images\policardia\policardi4.png')" alt="" class="bw width-250"></div>
-                    <div class="item"><h4>2</h4></div>
-                    <div class="item"><h4>3</h4></div>
-                    <div class="item"><h4>4</h4></div>
-                    <div class="item"><h4>5</h4></div>
-                    <div class="item"><h4>6</h4></div>
-                    <div class="item"><h4>7</h4></div>
-                    <div class="item"><h4>8</h4></div>
-                    <div class="item"><h4>9</h4></div>
-                    <div class="item"><h4>10</h4></div>
-                    <div class="item"><h4>11</h4></div>
-                    <div class="item"><h4>12</h4></div>
+                    @php echo '<div class="item"><img src="'.$upload.'compagnia1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'compagnia2.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'compagnia3.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'compagnia4.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'compagnia5.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 section_title_container right"> 
@@ -62,18 +51,15 @@
             </div>    
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="@asset('images\policardia\policardi4.png')" alt="" class="bw width-250"></div>
-                    <div class="item"><h4>2</h4></div>
-                    <div class="item"><h4>3</h4></div>
-                    <div class="item"><h4>4</h4></div>
-                    <div class="item"><h4>5</h4></div>
-                    <div class="item"><h4>6</h4></div>
-                    <div class="item"><h4>7</h4></div>
-                    <div class="item"><h4>8</h4></div>
-                    <div class="item"><h4>9</h4></div>
-                    <div class="item"><h4>10</h4></div>
-                    <div class="item"><h4>11</h4></div>
-                    <div class="item"><h4>12</h4></div>
+                    @php echo '<div class="item"><img src="'.$upload.'cci1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci2.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci3.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci4.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci5.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci6.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci7.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci8.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci9.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 section_toggle_desktop">
@@ -87,18 +73,11 @@
             </div>
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    <div class="item"><img src="@asset('images\policardia\policardi4.png')" alt="" class="bw width-250"></div>
-                    <div class="item"><h4>2</h4></div>
-                    <div class="item"><h4>3</h4></div>
-                    <div class="item"><h4>4</h4></div>
-                    <div class="item"><h4>5</h4></div>
-                    <div class="item"><h4>6</h4></div>
-                    <div class="item"><h4>7</h4></div>
-                    <div class="item"><h4>8</h4></div>
-                    <div class="item"><h4>9</h4></div>
-                    <div class="item"><h4>10</h4></div>
-                    <div class="item"><h4>11</h4></div>
-                    <div class="item"><h4>12</h4></div>
+                        @php echo '<div class="item"><img src="'.$upload.'formazione1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'formazione2.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'formazione3.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'formazione4.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                        @php echo '<div class="item"><img src="'.$upload.'formazione5.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 section_title_container right"> 

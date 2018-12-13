@@ -10,6 +10,7 @@ export default {
       loop: true,
       margin: 5,
       dots: true,
+      autoplay: true,
     });
   },
 };
