@@ -1,12 +1,14 @@
 <header class="banner">
   <div class="container">
-    <div class="social_links">
-      <a href="https://www.facebook.com/PolicardiaT/" class="social_link"><img src="@asset('images/tasto_facebook.png')" alt="facebook page link" class="social_img"></a>
-      <a href="https://www.instagram.com/policardiateatro/" class="social_link"><img src="@asset('images/tasto_instagram.png')" alt="instagram page link" class="social_img"></a>
-      <a href="https://www.youtube.com/channel/UC1pKiq6u1HlOMwdJP36dLBg" class="social_link"><img src="@asset('images/tasto_youtube.png')" alt="youtube page link" class="social_img social_img_youtube"></a>
-    </div>
-    <div class="center-logo">
-      <a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/logo_teatro_policardia.png')" alt="logo teatro Policardia" class="logo"></a>
+    <div class="head-logo-social">
+      <div class="center-logo">
+        <a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/logo_teatro_policardia.png')" alt="logo teatro Policardia" class="logo"></a>
+      </div>
+      <div class="social_links">
+        <a href="https://www.facebook.com/PolicardiaT/" class="social_link"><img src="@asset('images/tasto_facebook.png')" alt="facebook page link" class="social_img"></a>
+        <a href="https://www.instagram.com/policardiateatro/" class="social_link"><img src="@asset('images/tasto_instagram.png')" alt="instagram page link" class="social_img"></a>
+        <a href="https://www.youtube.com/channel/UC1pKiq6u1HlOMwdJP36dLBg" class="social_link"><img src="@asset('images/tasto_youtube.png')" alt="youtube page link" class="social_img social_img_youtube"></a>
+      </div>
     </div>
     {{-- Navbar desktop --}}
     <nav class="navbar-desktop">

@@ -8,6 +8,13 @@
   padding: 0;
 }
 
+.head-logo-social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  flex-wrap: wrap-reverse;
+}
+
 div.social_links {
   display: flex;
   justify-content: flex-end;
@@ -45,7 +52,7 @@ div.center-logo {
     width: 250px;
 
     @media (min-width: $screen_tablet) {
-      width: 300px;
+      width: 400px;
     }
   }
 }
@@ -140,4 +147,5 @@ div.center-logo {
 #breadcrumbs a {
   font-family: "bite_bullet", serif;
   font-size: 20px;
+  opacity: 0.4;
 }

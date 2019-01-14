@@ -17,15 +17,15 @@
                 </div>
             </div>
             <p> {!! $post->post_content !!} </p>
-            <div class="row link_formazione">
-                <div class="col-sm-12 col-md-4 single_link_formazione">
-                    <a href="http://progettovalar.wixsite.com/progettovalar"></a><img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
+            <div class="row end_page_buttons end_page_buttons_formazione">
+                <div class="col-sm-4 col-md-4">
+                    <a href="http://progettovalar.wixsite.com/progettovalar"></a>
                 </div>
-                <div class="col-sm-12 col-md-4 single_link_formazione">
-                    <img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
+                <div class="col-sm-4 col-md-4">
+                    <a href="{{ get_permalink( get_page_by_path( 'laboratorio-di-teatro' ) ) }}"></a>
                 </div>
-                <div class="col-sm-12 col-md-4 single_link_formazione">
-                    <img src="@asset('images\policardia\policardi4.png')" alt="" class="w-75 bw">
+                <div class="col-sm-4 col-md-4">
+                    <a href="{{ get_permalink( get_page_by_path( 'progetti-nel-sociale' ) ) }}"></a>
                 </div>
             </div>
             <h2> L'EQUIPE DEI FORMATORI </h2>
@@ -57,17 +57,6 @@
                             endwhile;
                         endif;
                     @endphp
-                    <div class="item"><img src="@asset('images\policardia\policardi4.png')" alt="" class="width-250"></div>
-                    <div class="item"><img src="@asset('images\policardia\policardi4.png')" alt="" class="width-250"></div>
-                    <div class="item"><h4>4</h4></div>
-                    <div class="item"><h4>5</h4></div>
-                    <div class="item"><h4>6</h4></div>
-                    <div class="item"><h4>7</h4></div>
-                    <div class="item"><h4>8</h4></div>
-                    <div class="item"><h4>9</h4></div>
-                    <div class="item"><h4>10</h4></div>
-                    <div class="item"><h4>11</h4></div>
-                    <div class="item"><h4>12</h4></div>
                 </div>
             </div>
         </div> {{-- !center --}}

@@ -4,8 +4,8 @@
   height: 250px !important;
 
   @media (min-width: $screen_tablet) {
-    width: 300px !important;
-    height: 300px !important;
+    width: 400px !important;
+    height: 400px !important;
   }
 }
 
@@ -105,10 +105,68 @@ a.section_title_link {
     transition: all 300ms;
 
     img {
-      width: 50% !important;
-      opacity: 0.5;
+      opacity: 0;
     }
   }
+}
+
+.end_page_buttons_policardia {
+  height: 300px;
+
+  :nth-child(1) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto_cci.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(2) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto_la_compagnia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(3) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto_formazione.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(1):hover {
+    background-image: url(../../images/tasto_cci_copy.png);
+    cursor: pointer;
+  }
+
+  :nth-child(2):hover {
+    background-image: url(../../images/tasto_la_compagnia_copy.png);
+    cursor: pointer;
+  }
+
+  :nth-child(3):hover {
+    background-image: url(../../images/tasto_formazione_copy.png);
+    cursor: pointer;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: none !important;
+  }
+}
+
+.end_page_buttons_spettacoli .spettacoli_button {
+  height: 300px;
+  transition: all 300ms;
+  background-image: url(../../images/tasto_spettacoli.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .item_flex {
@@ -137,6 +195,18 @@ a.section_title_link {
     flex-direction: row;
     text-align: left;
   }
+}
+
+.end_page_buttons_spettacoli .spettacoli_button a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: none !important;
+}
+
+.end_page_buttons_spettacoli .spettacoli_button:hover {
+  background-image: url(../../images/tasto_spettacoli_copy.png);
+  cursor: pointer;
 }
 
 /* Pagina La Compagnia */

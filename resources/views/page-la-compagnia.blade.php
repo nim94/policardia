@@ -15,12 +15,11 @@
                     @php echo '<div class="item"><img src="'.$upload.'compagnia4.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
                     @php echo '<div class="item"><img src="'.$upload.'compagnia5.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
-                </div>
             </div>
             <p> {!! $post->post_content !!} </p>
-            <div class="row spettacoli">
-                <div class="spettacoli_button col-sm-12 col-md-6">
-                    <a href="@php echo esc_url( get_category_link( get_cat_ID( 'spettacoli' ) ) ) @endphp"><img src="@asset('images/tasto_spettacoli.png')" alt="Spettacoli" class="bw width-250"></a>
+            <div class="row spettacoli end_page_buttons_spettacoli">
+                <div class="spettacoli_button col-sm-12 col-md-4">
+                    <a href="{{ esc_url( get_category_link( get_cat_ID( 'spettacoli' ) ) ) }}"></a>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="curriculum">  

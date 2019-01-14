@@ -36,10 +36,80 @@ img.width-250 {
   width: 250px !important;
 
   @media (min-width: $screen_tablet) {
-    width: 300px !important;
+    width: 400px !important;
   }
 }
 
 .center-content {
-  text-align: center !important;
+  text-align: center;
+  margin: 50px auto;
+
+  p {
+    margin: 50px auto;
+    text-align: justify;
+  }
+
+  p.citazione {
+    margin: 50px auto;
+    text-align: center !important;
+  }
+
+  h1 {
+    font-size: 70px;
+    margin: 50px auto;
+  }
+
+  h2 {
+    margin-top: 70px;
+  }
+}
+
+.end_page_buttons_formazione {
+  height: 300px;
+
+  :nth-child(1) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto-progetto-nelle-scuole.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(2) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto-laboratorio-di-teatro.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(3) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto-progetti-nel-sociale.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(1):hover {
+    background-image: url(../../images/tasto-progetto-nelle-scuole-mouse.png);
+    cursor: pointer;
+  }
+
+  :nth-child(2):hover {
+    background-image: url(../../images/tasto-lab-di-teatro-mouse.png);
+    cursor: pointer;
+  }
+
+  :nth-child(3):hover {
+    background-image: url(../../images/tasto-lab-di-teatro-mouse.png);
+    cursor: pointer;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: none !important;
+  }
 }
