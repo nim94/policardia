@@ -18,13 +18,13 @@
             </div>
             <p> {!! $post->post_content !!} </p>
             <div class="row end_page_buttons end_page_buttons_formazione">
-                <div class="col-sm-4 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <a href="http://progettovalar.wixsite.com/progettovalar"></a>
                 </div>
-                <div class="col-sm-4 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <a href="{{ get_permalink( get_page_by_path( 'laboratorio-di-teatro' ) ) }}"></a>
                 </div>
-                <div class="col-sm-4 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <a href="{{ get_permalink( get_page_by_path( 'progetti-nel-sociale' ) ) }}"></a>
                 </div>
             </div>

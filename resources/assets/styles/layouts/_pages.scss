@@ -113,6 +113,14 @@ a.section_title_link {
 .end_page_buttons_policardia {
   height: 300px;
 
+  @media(max-width: $screen_tablet) {
+    height: 700px;
+
+    div {
+      margin: 10px auto;
+    }
+  }
+
   :nth-child(1) {
     transition: all 300ms;
     background-image: url(../../images/tasto_cci.png);
@@ -167,6 +175,14 @@ a.section_title_link {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media(max-width: $screen_tablet) {
+    height: 700px;
+
+    div {
+      margin: 10px auto;
+    }
+  }
 }
 
 .item_flex {
@@ -274,4 +290,123 @@ a.section_title_link {
 /* Pagina La Formazione */
 .single_link_formazione {
   margin-bottom: 10px;
+}
+
+/* Pagina Laboratorio di Teatro */
+
+.mappa {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.row-sedi{
+text-align: left;
+
+  .sede {
+    margin: 10px auto;
+
+    .titolo-sede {
+      text-align: center;
+      font-family: 'Muli', sans-serif !important;
+      font-size: 30px;
+      font-weight: 700;
+      color: map-get($map: $theme-colors, $key: primary);
+      margin: 50px auto;
+    }
+
+    .descrizione-sede {
+      margin: 5px auto;
+      font-family: "Noto Sans", sans-serif;
+      color: map-get($map: $theme-colors, $key: secondary);
+
+      strong {
+        font-weight: 700;
+        color: map-get($map: $theme-colors, $key: primary);
+      }
+    }
+
+    .sede-contatti {
+      img {
+        width: 35px;
+        height: 35px;
+        margin: 5px 5px 5px auto;
+      }
+
+      a {
+        color: map-get($map: $theme-colors, $key: secondary);
+        transition: all 300ms;
+        font-size: 14px;
+
+        &:hover {
+          color: map-get($map: $theme-colors, $key: hover);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.ubuntu-festival-img {
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+.end_page_buttons_lab_teatro {
+  height: 300px;
+  
+  @media(max-width: $screen_tablet) {
+    height: 700px;
+
+    div {
+      margin: 10px auto;
+    }
+  }
+
+  :nth-child(1) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto-galleria-Ubuntu-2018.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(2) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto-galleria-Ubuntu-2017.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(3) {
+    transition: all 300ms;
+    background-image: url(../../images/tasto-galleria-Ubuntu-2016.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :nth-child(1):hover {
+    background-image: url(../../images/policardia4bn.png);
+    cursor: pointer;
+  }
+
+  :nth-child(2):hover {
+    background-image: url(../../images/formazione2bn.png);
+    cursor: pointer;
+  }
+
+  :nth-child(3):hover {
+    background-image: url(../../images/tasto_formazione_copy.png);
+    cursor: pointer;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: none !important;
+  }
 }
