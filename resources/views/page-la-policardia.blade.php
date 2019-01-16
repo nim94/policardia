@@ -4,7 +4,7 @@
     <div class="container">
         <div class="center-content">
             <p class="citazione">
-                @if( $citazione = get_field('citazione') ) {!! $citazione !!} <p style="text-align: right !important; margin-right: 5%;">Andrea Elodie Moretti</p> @endif
+                @if( $citazione = get_field('citazione') ) {!! $citazione !!} <p class="autore_citazione">Andrea Elodie Moretti</p> @endif
             </p>
             <h1 class="center-content"> {!! get_the_title() !!} </h1>
             <div class="col-sm-12 col-md-6 slider-policardia">
