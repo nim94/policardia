@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="row row-sedi">
-                <div class="sede col-sm-12 col-md-4">
+                <div class="sede col-sm-12 col-md-5 col-lg-4">
                     <h3 class="titolo-sede">Massa-Carrara e La Spezia</h3>
                     <p class="descrizione-sede">
                         I nostri laboratori sono presenti nei comuni di <strong>Massa</strong>, <strong>Carrara</strong> e <strong>La Spezia</strong>
@@ -37,8 +37,8 @@
                         <a href="mailto:massacarrara.policardiateatro@gmail.com">massacarrara.policardiateatro@gmail.com</a>
                     </div>
                 </div>{{-- fine sede 1 --}}
-                <div class="col-0 col-md-2"></div>
-                <div class="sede col-sm-12 col-md-4">
+                <div class="col-md-1 col-lg-2"></div>
+                <div class="sede col-sm-12 col-md-5 col-lg-4">
                     <h3 class="titolo-sede">Versilia</h3>
                     <p class="descrizione-sede">
                         I nostri laboratori sono presenti nei comuni di <strong>Viareggio</strong>, <strong>Camaiore</strong>,<strong>Massarosa</strong> e <strong>Pietrasanta</strong>
@@ -52,7 +52,7 @@
                         <a href="mailto:versilia.policardiateatro@gmail.com">versilia.policardiateatro@gmail.com</a>
                     </div>
                 </div>{{-- fine sede 2 --}}
-                <div class="sede col-sm-12 col-md-4">
+                <div class="sede col-sm-12 col-md-5 col-lg-4">
                     <h3 class="titolo-sede">Lucca</h3>
                     <p class="descrizione-sede">
                         I nostri laboratori sono presenti nel comune di <strong>Lucca</strong>
@@ -66,8 +66,8 @@
                         <a href="mailto:lucca.policardiateatro@gmail.com">lucca.policardiateatro@gmail.com</a>
                     </div>
                 </div>{{-- fine sede 3 --}}
-                <div class="col-0 col-md-2"></div>
-                <div class="sede col-sm-12 col-md-4">
+                <div class="col-md-1 col-lg-2"></div>
+                <div class="sede col-sm-12 col-md-5 col-lg-4">
                     <h3 class="titolo-sede">Pisa</h3>
                     <p class="descrizione-sede">
                         I nostri laboratori sono presenti nei comuni di <strong>Pisa</strong> e <strong>Vicopisano</strong>

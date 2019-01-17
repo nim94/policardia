@@ -113,7 +113,7 @@ a.section_title_link {
 .end_page_buttons_policardia {
   height: 300px;
 
-  @media(max-width: $screen_tablet) {
+  @media (max-width: $screen_tablet) {
     height: 700px;
 
     div {
@@ -176,7 +176,7 @@ a.section_title_link {
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media(max-width: $screen_tablet) {
+  @media (max-width: $screen_tablet) {
     height: 700px;
 
     div {
@@ -300,15 +300,15 @@ a.section_title_link {
   margin: 100px auto;
 }
 
-.row-sedi{
-text-align: left;
+.row-sedi {
+  text-align: left;
 
   .sede {
     margin: 10px auto;
 
     .titolo-sede {
       text-align: center;
-      font-family: 'Muli', sans-serif !important;
+      font-family: "Muli", sans-serif !important;
       font-size: 30px;
       font-weight: 700;
       color: map-get($map: $theme-colors, $key: primary);
@@ -327,6 +327,9 @@ text-align: left;
     }
 
     .sede-contatti {
+      display: inline-flex;
+      align-items: center;
+
       img {
         width: 35px;
         height: 35px;
@@ -337,6 +340,10 @@ text-align: left;
         color: map-get($map: $theme-colors, $key: secondary);
         transition: all 300ms;
         font-size: 14px;
+
+        @media (max-width: $screen_phone) {
+          font-size: 12px;
+        }
 
         &:hover {
           color: map-get($map: $theme-colors, $key: hover);
@@ -355,8 +362,8 @@ text-align: left;
 
 .end_page_buttons_lab_teatro {
   height: 300px;
-  
-  @media(max-width: $screen_tablet) {
+
+  @media (max-width: $screen_tablet) {
     height: 700px;
 
     div {

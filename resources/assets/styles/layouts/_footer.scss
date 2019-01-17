@@ -48,3 +48,12 @@ footer.content-info {
     width: 150px;
   }
 }
+
+.end_footer {
+  font-size: 12px;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

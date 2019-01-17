@@ -16,5 +16,10 @@
         <div>La Policardia Teatro è <br />sostenuta da Funder35</div>
       </div>
     </div>
+    <div class="row end_footer">
+      <div class="col-12">
+        <a href="#"> Privacy </a>&nbsp;||&nbsp;<a href="/cookie"> Cookie </a>&nbsp;||&nbsp;Designed by Nicola Morelli
+      </div>
+    </div>
   </div>
 </footer>

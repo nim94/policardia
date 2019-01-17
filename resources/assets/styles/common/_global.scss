@@ -36,7 +36,7 @@ img.width-250 {
   width: 250px !important;
   max-width: 100%;
 
-  @media(max-width: $screen_phone) {
+  @media (max-width: $screen_phone) {
     max-width: 90%;
   }
 
@@ -54,12 +54,13 @@ img.width-250 {
     text-align: justify;
   }
 
-  p.autore_citazione, p.citazione {
-    text-align: right !important; 
+  p.autore_citazione,
+  p.citazione {
+    text-align: right !important;
     margin-right: 5%;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-  } 
+  }
 
   h1 {
     font-size: 70px;
@@ -109,7 +110,7 @@ img.width-250 {
   }
 
   :nth-child(3):hover {
-    background-image: url(../../images/tasto-lab-di-teatro-mouse.png);
+    background-image: url(../../images/tasto-progetto-nel-sociale-mouse.png);
     cursor: pointer;
   }
 
