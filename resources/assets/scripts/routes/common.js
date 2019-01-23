@@ -1,3 +1,4 @@
+const lightbox = require('lightbox2');
 export default {
   init() {
     // JavaScript to be fired on all pages
@@ -20,6 +21,23 @@ export default {
       margin: 5,
       dots: true,
       autoplay: true,
+      animateOut: 'fadeOut',
     });
+
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true,
+      'showImageNumberLabel': false,
+    });
+
+    setTimeout(() =>
+      $('.modal').modal({
+        show: true,
+        backdrop: false,
+      }), 
+      1000 
+    );
+     
   },
 };

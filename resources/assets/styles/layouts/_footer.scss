@@ -4,6 +4,39 @@ footer.content-info {
   color: white;
   margin-top: 120px;
 
+  .modal {
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    right: unset;
+    top: unset;
+
+    .modal-content {
+      border: none;
+      background-color: #ededed;
+      border-radius: 5px;
+
+      .modal-footer {
+        padding: 0 1rem 1rem 1rem;
+
+        button {
+          border: none !important;
+          color: white !important;
+        }
+      }
+
+      .modal-body {
+        padding: 1rem 1rem 0 1rem;
+
+        p {
+          color: black;
+        }
+      }
+    }
+  }
+
   div.container div.row div {
     margin: 5px auto;
   }

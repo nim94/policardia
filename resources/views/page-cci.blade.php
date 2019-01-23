@@ -20,7 +20,10 @@
             <h2>I MAESTRI</h2>
             <div class="row maestri">
                 @php
-                    $query_maestri = new WP_Query( array( 'post_type' => 'maestri' ) );
+                    $query_maestri = new WP_Query( array( 'post_type'      => 'maestri',
+                                                          'order'          => 'ASC',
+                                                          'orderby'        => 'date',
+                                                          'posts_per_page' =>  -1 ) );
                     if( $query_maestri->have_posts() ) : 
                         while ( $query_maestri->have_posts() ) : $query_maestri->the_post();
                 @endphp

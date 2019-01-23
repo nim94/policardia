@@ -191,7 +191,7 @@ a.section_title_link {
   flex: 1;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
 
   a {
     text-decoration: none;
@@ -261,13 +261,24 @@ a.section_title_link {
     flex: 1;
     justify-content: center;
 
+    @media (min-width: $screen_tablet) {
+      justify-content: flex-end;
+    }
+
     .owl-dot {
-      width: 5px;
-      height: 5px;
+      width: 7px;
+      height: 7px;
       background: map-get($map: $theme-colors, $key: secondary);
       margin: 0 2px;
       opacity: 0.5;
       border-radius: 50%;
+      margin-right: 20px;
+
+      @media (min-width: $screen_tablet) {
+        width: 15px;
+        height: 15px;
+        margin-right: 30px;
+      }
 
       &.active {
         background: map-get($map: $theme-colors, $key: primary);
@@ -309,7 +320,7 @@ a.section_title_link {
     .titolo-sede {
       text-align: center;
       font-family: "Muli", sans-serif !important;
-      font-size: 30px;
+      font-size: 35px;
       font-weight: 700;
       color: map-get($map: $theme-colors, $key: primary);
       margin: 50px auto;
@@ -319,6 +330,7 @@ a.section_title_link {
       margin: 5px auto;
       font-family: "Noto Sans", sans-serif;
       color: map-get($map: $theme-colors, $key: secondary);
+      font-size: 20px;
 
       strong {
         font-weight: 700;
@@ -330,16 +342,22 @@ a.section_title_link {
       display: inline-flex;
       align-items: center;
 
-      img {
+      img.email {
         width: 35px;
         height: 35px;
+        margin: 5px 5px 5px auto;
+      }
+
+      img.tel {
+        width: 35px;
+        height: 50px;
         margin: 5px 5px 5px auto;
       }
 
       a {
         color: map-get($map: $theme-colors, $key: secondary);
         transition: all 300ms;
-        font-size: 14px;
+        font-size: 18px;
 
         @media (max-width: $screen_phone) {
           font-size: 12px;
@@ -362,6 +380,7 @@ a.section_title_link {
 
 .end_page_buttons_lab_teatro {
   height: 300px;
+  overflow: hidden;
 
   @media (max-width: $screen_tablet) {
     height: 700px;
@@ -371,7 +390,7 @@ a.section_title_link {
     }
   }
 
-  :nth-child(1) {
+  .LightLink2018 {
     transition: all 300ms;
     background-image: url(../../images/tasto-galleria-Ubuntu-2018.png);
     background-position: center center;
@@ -379,7 +398,7 @@ a.section_title_link {
     background-size: contain;
   }
 
-  :nth-child(2) {
+  .LightLink2017 {
     transition: all 300ms;
     background-image: url(../../images/tasto-galleria-Ubuntu-2017.png);
     background-position: center center;
@@ -387,7 +406,7 @@ a.section_title_link {
     background-size: contain;
   }
 
-  :nth-child(3) {
+  .LightLink2016 {
     transition: all 300ms;
     background-image: url(../../images/tasto-galleria-Ubuntu-2016.png);
     background-position: center center;
@@ -395,17 +414,17 @@ a.section_title_link {
     background-size: contain;
   }
 
-  :nth-child(1):hover {
+  .LightLink2018:hover {
     background-image: url(../../images/policardia4bn.png);
     cursor: pointer;
   }
 
-  :nth-child(2):hover {
+  .LightLink2017:hover {
     background-image: url(../../images/formazione2bn.png);
     cursor: pointer;
   }
 
-  :nth-child(3):hover {
+  .LightLink2016:hover {
     background-image: url(../../images/tasto-2016.png);
     cursor: pointer;
   }
@@ -416,4 +435,19 @@ a.section_title_link {
     display: block;
     background-image: none !important;
   }
+}
+
+.lightbox .lb-image {
+  border: none;
+}
+
+.lb-data {
+
+  .lb-close {
+    display: none !important;
+  }
+}
+
+.lb-nav {
+  display: block !important;
 }

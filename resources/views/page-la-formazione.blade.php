@@ -32,7 +32,10 @@
             <div class="slider-compagnia">
                 <div class="owl-carousel owl-theme owl-carousel-home">
                     @php
-                        $query_formatori = new WP_Query( array( 'post_type' => 'formatori' ) );
+                        $query_formatori = new WP_Query( array( 'post_type'       => 'formatori',
+                                                                 'order'          => 'ASC',
+                                                                 'orderby'        => 'date',
+                                                                 'posts_per_page' =>  -1 ) );
                         if( $query_formatori->have_posts() ) : 
                             while ( $query_formatori->have_posts() ) : $query_formatori->the_post();
                     @endphp

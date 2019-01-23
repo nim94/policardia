@@ -2,7 +2,7 @@
   <div class="container">
     <div class="head-logo-social">
       <div class="center-logo">
-        <a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/logo_teatro_policardia.png')" alt="logo teatro Policardia" class="logo"></a>
+        <a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/logo-policardia-teatro-2018.png')" alt="logo teatro Policardia" class="logo"></a>
       </div>
       <div class="social_links">
         <a href="https://www.facebook.com/PolicardiaT/" class="social_link"><img src="@asset('images/tasto_facebook.png')" alt="facebook page link" class="social_img"></a>

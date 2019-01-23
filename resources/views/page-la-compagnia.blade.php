@@ -31,7 +31,10 @@
             <div class="slider-compagnia">
                 <div class="owl-carousel owl-theme owl-carousel-home">
                     @php
-                        $query_attori = new WP_Query( array( 'post_type' => 'attori' ) );
+                        $query_attori = new WP_Query( array( 'post_type'       => 'attori',
+                                                              'order'          => 'ASC',
+                                                              'orderby'        => 'date',
+                                                              'posts_per_page' =>  -1 ) );
                         if( $query_attori->have_posts() ) : 
                             while ( $query_attori->have_posts() ) : $query_attori->the_post();
                     @endphp

@@ -20,6 +20,7 @@ h1,
 h2,
 h3 {
   font-weight: 700;
+  text-align: center;
   color: map-get($map: $theme-colors, $key: primary);
 }
 
@@ -41,13 +42,18 @@ img.width-250 {
   }
 
   @media (min-width: $screen_tablet) {
-    width: 400px !important;
+    width: 500px !important;
   }
 }
 
 .center-content {
-  text-align: center;
   margin: 50px auto;
+  text-align: center;
+
+  ul,
+  li {
+    text-align: justify;
+  }
 
   p {
     margin: 50px auto;
@@ -68,12 +74,20 @@ img.width-250 {
   }
 
   h2 {
-    margin-top: 70px;
+    margin-top: 200px;
   }
 }
 
 .end_page_buttons_formazione {
   height: 300px;
+
+  @media (max-width: $screen_tablet) {
+    height: 700px;
+
+    div {
+      margin: 10px auto;
+    }
+  }
 
   :nth-child(1) {
     transition: all 300ms;

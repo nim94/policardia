@@ -26,14 +26,14 @@
                 <div class="sede col-sm-12 col-md-5 col-lg-4">
                     <h3 class="titolo-sede">Massa-Carrara e La Spezia</h3>
                     <p class="descrizione-sede">
-                        I nostri laboratori sono presenti nei comuni di <strong>Massa</strong>, <strong>Carrara</strong> e <strong>La Spezia</strong>
+                        I nostri laboratori sono presenti nei comuni di <strong>Massa</strong>, <strong>Carrara</strong> e <br /><strong>La Spezia</strong>
                     </p>
                     <div class="sede-contatti">
-                        <img src="@asset('images/Cell.png')" alt="cellulare">
+                        <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
                         <a href="tel:3341444065">Beatrice: 3341444065</a>
                     </div>
                     <div class="sede-contatti">
-                        <img src="@asset('images/email.png')" alt="email">
+                        <img src="@asset('images/email.png')" alt="email" class="email">
                         <a href="mailto:massacarrara.policardiateatro@gmail.com">massacarrara.policardiateatro@gmail.com</a>
                     </div>
                 </div>{{-- fine sede 1 --}}
@@ -44,11 +44,11 @@
                         I nostri laboratori sono presenti nei comuni di <strong>Viareggio</strong>, <strong>Camaiore</strong>,<strong>Massarosa</strong> e <strong>Pietrasanta</strong>
                     </p>
                     <div class="sede-contatti">
-                        <img src="@asset('images/Cell.png')" alt="cellulare">
+                        <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
                         <a href="tel:3341929572">Andrea: 3341929572</a>
                     </div>
                     <div class="sede-contatti">
-                        <img src="@asset('images/email.png')" alt="email">
+                        <img src="@asset('images/email.png')" alt="email" class="email">
                         <a href="mailto:versilia.policardiateatro@gmail.com">versilia.policardiateatro@gmail.com</a>
                     </div>
                 </div>{{-- fine sede 2 --}}
@@ -58,11 +58,11 @@
                         I nostri laboratori sono presenti nel comune di <strong>Lucca</strong>
                     </p>
                     <div class="sede-contatti">
-                        <img src="@asset('images/Cell.png')" alt="cellulare">
+                        <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
                         <a href="tel:3402868993">Pietro: 3402868993</a>
                     </div>
                     <div class="sede-contatti">
-                        <img src="@asset('images/email.png')" alt="email">
+                        <img src="@asset('images/email.png')" alt="email" class="email">
                         <a href="mailto:lucca.policardiateatro@gmail.com">lucca.policardiateatro@gmail.com</a>
                     </div>
                 </div>{{-- fine sede 3 --}}
@@ -73,11 +73,11 @@
                         I nostri laboratori sono presenti nei comuni di <strong>Pisa</strong> e <strong>Vicopisano</strong>
                     </p>
                     <div class="sede-contatti">
-                        <img src="@asset('images/Cell.png')" alt="cellulare">
+                        <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
                         <a href="tel:3402868993">Pietro: 3402868993</a>
                     </div>
                     <div class="sede-contatti">
-                        <img src="@asset('images/email.png')" alt="email">
+                        <img src="@asset('images/email.png')" alt="email" class="email">
                         <a href="mailto:pisa.policardiateatro@gmail.com">pisa.policardiateatro@gmail.com</a>
                     </div>
                 </div>{{-- fine sede 4 --}}
@@ -102,15 +102,38 @@
                 </div>
             </div>
             <div class="row end_page_buttons end_page_buttons_lab_teatro">
-                <div class="col-sm-12 col-md-4">
-                    
+                <div class="col-sm-12 col-md-4 LightLink2016">
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2016-1-.jpg" data-lightbox="roadtrip"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2016-2.jpg" data-lightbox="roadtrip"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2016-3.jpg" data-lightbox="roadtrip"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2016-4.jpg" data-lightbox="roadtrip"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2016-5.jpg" data-lightbox="roadtrip"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2016-6.jpg" data-lightbox="roadtrip"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2016-7.jpg" data-lightbox="roadtrip"></a>
                 </div>
-                <div class="col-sm-12 col-md-4">
-                    
+                <div class="col-sm-12 col-md-4 LightLink2017">
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-1.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-2.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-3.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-4.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-5.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-6.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-7.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/Ubuntu-2017-8.jpg" data-lightbox="roadtrip2"></a>
                 </div>
-                <div class="col-sm-12 col-md-4">
-                    
-                </div>
+                <div class="col-sm-12 col-md-4 LightLink2018">
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-1.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-2.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-3.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-4.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-5.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-6.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-7.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-8.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-9.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-10.jpg" data-lightbox="roadtrip2"></a>
+                    <a href="{{ wp_upload_dir()['baseurl'] }}/2019/01/ubuntu-2018-11.jpg" data-lightbox="roadtrip2"></a>
+            </div>
             </div>
         </div> {{-- !center --}}
     </div> {{-- !container --}}

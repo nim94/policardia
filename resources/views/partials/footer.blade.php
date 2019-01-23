@@ -1,4 +1,25 @@
 <footer class="content-info">
+  @php
+   if( !isset( $_COOKIE["modal"] ) ) {
+    setcookie( "modal", 'show_modal',  time()+31500000, '/');
+    echo 
+    '<div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>'. get_field('modal-text',  get_page_by_title('Opzioni')) .'</p>
+            </div>
+            <div class="modal-footer">
+              <a href="mailto:promozione.policardiateatro@gmail.com"><button type="button" class="btn btn-primary">SCRIVICI</button></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>';
+      var_dump($_COOKIE["modal"]);
+   }   
+   /* elseif( $_COOKIE['modal'] && $_COOKIE['modal'] == 'modal_show' ) */  
+  @endphp
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-lg-4 text-footer">
