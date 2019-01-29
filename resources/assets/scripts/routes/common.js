@@ -10,7 +10,10 @@ export default {
       items: 1,
       loop: true,
       margin: 5,
-      dots: true,
+      nav: true,
+      navText: ['',''],
+      navElement: 'span',
+      dots: false,
       autoplay: false,
     });
     

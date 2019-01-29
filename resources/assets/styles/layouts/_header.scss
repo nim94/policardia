@@ -71,7 +71,7 @@ div.center-logo {
 
   @media (min-width: $navbar_switcher) {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 
     #menu-primario {
       display: flex;
@@ -79,16 +79,20 @@ div.center-logo {
       justify-content: space-between;
       flex-direction: row;
 
-      a {
-        font-family: "bite_bullet", serif;
-        font-size: 30px;
-        color: map-get($map: $theme-colors, $key: primary);
-        transition: 300ms all;
+      li {
+        a {
+          font-family: "bite_bullet", serif;
+          font-size: 30px;
+          color: map-get($map: $theme-colors, $key: primary);
+          transition: 300ms all;
+          display: inline-block;
+        }
       }
 
       li.current_page_item a {
         font-size: 33px;
         color: map-get($map: $theme-colors, $key: secondary);
+        position: relative;
       }
 
       li:hover a {
@@ -97,6 +101,8 @@ div.center-logo {
 
       ul.sub-menu {
         display: none;
+        position: absolute;
+        width: 300%;
       }
 
       li:hover ul.sub-menu {
@@ -107,8 +113,7 @@ div.center-logo {
           list-style-type: none;
 
           a {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 24px;
             color: map-get($map: $theme-colors, $key: primary);
           }
 
