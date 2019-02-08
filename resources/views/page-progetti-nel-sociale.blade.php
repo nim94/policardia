@@ -9,12 +9,12 @@
                     @php
                     $upload = wp_upload_dir()['baseurl'] . '/2019/01/';
                     @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'1-1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'2-1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'3-1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'4-1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'5-1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'6.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'1-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'2-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'3-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'4-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'5-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'6.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
             </div>
             <p> {!! $post->post_content !!} </p>

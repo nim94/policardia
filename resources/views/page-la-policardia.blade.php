@@ -12,11 +12,11 @@
                     @php
                     $upload = wp_upload_dir()['baseurl'] . '/2018/12/';
                     @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'policardia1.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'policardia2.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'policardia3.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'policardi4.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'policardia5.png" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'policardia1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'policardia2.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'policardia3.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'policardi4.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'policardia5.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
             </div>
             <p> {!! $post->post_content !!} </p>

@@ -5,27 +5,56 @@ export default {
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
-    $('.slider-compagnia .owl-carousel').owlCarousel({
-      center: true,
-      items: 1,
-      loop: true,
-      margin: 5,
-      nav: true,
-      navText: ['',''],
-      navElement: 'span',
-      dots: false,
-      autoplay: false,
-    });
-    
-    $('.owl-carousel').owlCarousel({
-      center: true,
-      items: 1,
-      loop: true,
-      margin: 5,
-      dots: true,
-      autoplay: true,
-      animateOut: 'fadeOut',
-    });
+    if( window.innerWidth > 1024 ) {
+      $('.slider-compagnia .owl-carousel').owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        margin: 5,
+        nav: true,
+        navText: ['',''],
+        navElement: 'span',
+        dots: false,
+        autoplay: false,
+        lazyLoad: true,
+      });
+      
+      $('.owl-carousel').owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        margin: 5,
+        dots: true,
+        autoplay: true,
+        animateOut: 'fadeOut',
+        lazyLoad: true,
+      });
+    }
+    else {
+      $('.slider-compagnia .owl-carousel').owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        margin: 5,
+        nav: true,
+        navText: ['',''],
+        navElement: 'span',
+        dots: false,
+        autoplay: false,
+        lazyLoad: false,
+      });
+      
+      $('.owl-carousel').owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        margin: 5,
+        dots: true,
+        autoplay: true,
+        animateOut: 'fadeOut',
+        lazyLoad: false,
+      });
+    }
 
     lightbox.option({
       'resizeDuration': 200,

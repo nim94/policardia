@@ -168,20 +168,18 @@ a.section_title_link {
   }
 }
 
-.end_page_buttons_spettacoli .spettacoli_button {
-  height: 300px;
-  transition: all 300ms;
-  background-image: url(../../images/tasto_spettacoli.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (max-width: $screen_tablet) {
-    height: 700px;
-
-    div {
-      margin: 10px auto;
-    }
+.end_page_buttons_spettacoli {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  
+  .spettacoli_button {
+    height: 300px;
+    transition: all 300ms;
+    background-image: url(../../images/tasto_spettacoli.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -192,6 +190,7 @@ a.section_title_link {
   justify-content: center;
   align-items: center;
   text-align: justify;
+  width: 100%;
 
   a {
     text-decoration: none;
@@ -290,8 +289,13 @@ a.section_title_link {
     display: flex;
     flex: 1;
     justify-content: center;
-    width: 50%;
-    margin: 0 0 0 auto;
+    position: relative;
+    top: -60px;
+
+    @media (min-width: $screen_tablet) {
+      width: 50%;
+      margin: 0 0 0 auto;
+    }
 
     .owl-prev {
       background: url(../../images/flecha_izquierda_gris.png) center center no-repeat;
@@ -417,7 +421,7 @@ a.section_title_link {
 
 .ubuntu-festival-img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 100px auto;
 }
 
@@ -495,46 +499,48 @@ a.section_title_link {
   }
 }
 
-.lb-nav {
-  display: block !important;
+.lb-container {
+  .lb-nav {
+    display: block !important;
 
-  a.lb-prev {
-    transition: all 300ms !important;
-    background: url(../../images/flecha_izquierda_gris.png) center left no-repeat;
-    background-size: 50px;
-    width: 60px;
-    height: 60px;
-    opacity: 1;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10px;
-
-    &:hover {
-      background: url(../../images/flecha_izquierda_amarilla.png) center left no-repeat;
+    a.lb-prev {
+      transition: all 300ms !important;
+      background: url(../../images/flecha_izquierda_gris.png) center left no-repeat;
       background-size: 50px;
       width: 60px;
       height: 60px;
+      opacity: 1;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -60px;
+
+      &:hover {
+        background: url(../../images/flecha_izquierda_amarilla.png) center left no-repeat;
+        background-size: 50px;
+        width: 60px;
+        height: 60px;
+      }
     }
-  }
 
-  a.lb-next {
-    transition: all 300ms;
-    background: url(../../images/flecha_derecha_gris.png) center right no-repeat;
-    background-size: 50px;
-    width: 60px;
-    height: 60px;
-    opacity: 1;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-
-    &:hover {
-      background: url(../../images/flecha_derecha_amarilla.png) center right no-repeat;
+    a.lb-next {
+      transition: all 300ms;
+      background: url(../../images/flecha_derecha_gris.png) center right no-repeat;
       background-size: 50px;
       width: 60px;
       height: 60px;
+      opacity: 1;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -60px;
+
+      &:hover {
+        background: url(../../images/flecha_derecha_amarilla.png) center right no-repeat;
+        background-size: 50px;
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 }

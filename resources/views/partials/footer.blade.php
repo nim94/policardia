@@ -1,7 +1,7 @@
 <footer class="content-info">
   @php
-   if( !isset( $_COOKIE["modal"] ) ) {
-    setcookie( "modal", 'show_modal',  time()+31500000, '/');
+   if( !isset( $_COOKIE["modal_cci"] ) && is_page('cci') ) {
+    setcookie( "modal_cci", 'show_modal',  time()+31500000, '/');
     echo 
     '<div class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -16,9 +16,24 @@
           </div>
         </div>
       </div>';
-      var_dump($_COOKIE["modal"]);
    }   
-   /* elseif( $_COOKIE['modal'] && $_COOKIE['modal'] == 'modal_show' ) */  
+   elseif( !isset( $_COOKIE["modal"] ) && !is_page('cci') ) {
+    setcookie( "modal", 'show_modal',  time()+31500000, '/');
+    echo 
+    '<div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>'. get_field('modal-newsletter-text',  get_page_by_title('Opzioni')) .'</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://policardiateatro.us18.list-manage.com/subscribe?u=2a4db4f68778ba1590e447833&id=dbdcf790bf"><button type="button" class="btn btn-primary">ISCRIVITI</button></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>';
+   }  
   @endphp
   <div class="container">
     <div class="row">
