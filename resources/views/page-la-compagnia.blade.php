@@ -7,7 +7,7 @@
             <div class="col-sm-12 col-md-6 slider-policardia">
                 <div class="owl-carousel owl-theme owl-carousel-home">
                     @php
-                    $upload = wp_upload_dir()['baseurl'] . '/2018/12/';
+                    $upload = wp_upload_dir()['baseurl'] . '/2019/02/';
                     @endphp
                     @php echo '<div class="item"><img src="'.$upload.'compagnia1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                     @php echo '<div class="item"><img src="'.$upload.'compagnia2.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp

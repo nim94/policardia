@@ -7,14 +7,13 @@
             <div class="col-sm-12 col-md-6 slider-policardia">
                 <div class="owl-carousel owl-theme owl-carousel-home">
                     @php
-                    $upload = wp_upload_dir()['baseurl'] . '/2019/01/';
+                    $upload = wp_upload_dir()['baseurl'] . '/2019/02/';
                     @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'1-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'2-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'3-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'4-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'5-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'6.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'2.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'3.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'4.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'5.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                 </div>
             </div>
             <p> {!! $post->post_content !!} </p>

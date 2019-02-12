@@ -172,7 +172,7 @@ a.section_title_link {
   display: flex;
   flex: 1;
   justify-content: center;
-  
+
   .spettacoli_button {
     height: 300px;
     transition: all 300ms;
@@ -303,7 +303,7 @@ a.section_title_link {
       width: 30px;
       height: 30px;
       transition: all 300ms;
-  
+
       &:hover {
         background: url(../../images/flecha_izquierda_amarilla.png) center center no-repeat;
         background-size: 20px;
@@ -311,14 +311,14 @@ a.section_title_link {
         height: 30px;
       }
     }
-  
+
     .owl-next {
       background: url(../../images/flecha_derecha_gris.png) center center no-repeat;
       background-size: 20px;
       width: 30px;
       height: 30px;
       transition: all 300ms;
-  
+
       &:hover {
         background: url(../../images/flecha_derecha_amarilla.png) center center no-repeat;
         background-size: 20px;
@@ -331,7 +331,7 @@ a.section_title_link {
 
 /* Pagina CCI */
 .maestro {
-  margin-top: 5px;
+  margin-top: 100px;
   margin-bottom: 5px;
 
   .nome_maestro {
@@ -386,19 +386,19 @@ a.section_title_link {
     }
 
     .sede-contatti {
-      display: inline-flex;
+      display: flex;
       align-items: center;
 
       img.email {
         width: 35px;
         height: 35px;
-        margin: 5px 5px 5px auto;
+        margin: 5px 5px 5px 0;
       }
 
       img.tel {
         width: 35px;
         height: 50px;
-        margin: 5px 5px 5px auto;
+        margin: 5px 5px 5px 0;
       }
 
       a {
@@ -543,4 +543,10 @@ a.section_title_link {
       }
     }
   }
+}
+
+/* Pagina Contatti */
+
+.titolo-contatto {
+  color: map-get($map: $theme-colors, $key: secondary);
 }

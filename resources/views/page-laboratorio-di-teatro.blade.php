@@ -7,7 +7,7 @@
             <div class="col-sm-12 col-md-6 slider-policardia">
                 <div class="owl-carousel owl-theme owl-carousel-home">
                     @php
-                    $upload = wp_upload_dir()['baseurl'] . '/2018/12/';
+                    $upload = wp_upload_dir()['baseurl'] . '/2019/02/';
                     @endphp
                     @php echo '<div class="item"><img src="'.$upload.'formazione1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                     @php echo '<div class="item"><img src="'.$upload.'formazione2.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
@@ -30,11 +30,11 @@
                     </p>
                     <div class="sede-contatti">
                         <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
-                        <a href="tel:3341444065">Beatrice: 3341444065</a>
+                        <a href="tel:{{ get_field('contatto-massa-carrara-tel',  get_page_by_title('Opzioni')) }}">Beatrice: {{ get_field('contatto-massa-carrara-tel',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                     <div class="sede-contatti">
                         <img src="@asset('images/email.png')" alt="email" class="email">
-                        <a href="mailto:massacarrara.policardiateatro@gmail.com">massacarrara.policardiateatro@gmail.com</a>
+                        <a href="mailto:{{ get_field('contatto-massa-carrara-mail',  get_page_by_title('Opzioni')) }}">{{ get_field('contatto-massa-carrara-mail',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                 </div>{{-- fine sede 1 --}}
                 <div class="col-md-1 col-lg-2"></div>
@@ -45,11 +45,11 @@
                     </p>
                     <div class="sede-contatti">
                         <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
-                        <a href="tel:3341929572">Andrea: 3341929572</a>
+                        <a href="tel:{{ get_field('contatto-versilia-tel',  get_page_by_title('Opzioni')) }}">Andrea Elodie: {{ get_field('contatto-versilia-tel',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                     <div class="sede-contatti">
                         <img src="@asset('images/email.png')" alt="email" class="email">
-                        <a href="mailto:versilia.policardiateatro@gmail.com">versilia.policardiateatro@gmail.com</a>
+                        <a href="mailto:{{ get_field('contatto-versilia-mail',  get_page_by_title('Opzioni')) }}">{{ get_field('contatto-versilia-mail',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                 </div>{{-- fine sede 2 --}}
                 <div class="sede col-sm-12 col-md-5 col-lg-4">
@@ -59,11 +59,11 @@
                     </p>
                     <div class="sede-contatti">
                         <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
-                        <a href="tel:3402868993">Pietro: 3402868993</a>
+                        <a href="tel:{{ get_field('contatto-lucca-tel',  get_page_by_title('Opzioni')) }}">Pietro: {{ get_field('contatto-lucca-tel',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                     <div class="sede-contatti">
                         <img src="@asset('images/email.png')" alt="email" class="email">
-                        <a href="mailto:lucca.policardiateatro@gmail.com">lucca.policardiateatro@gmail.com</a>
+                        <a href="mailto:{{ get_field('contatto-lucca-mail',  get_page_by_title('Opzioni')) }}">{{ get_field('contatto-lucca-mail',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                 </div>{{-- fine sede 3 --}}
                 <div class="col-md-1 col-lg-2"></div>
@@ -74,11 +74,11 @@
                     </p>
                     <div class="sede-contatti">
                         <img src="@asset('images/Cell.png')" alt="cellulare" class="tel">
-                        <a href="tel:3402868993">Pietro: 3402868993</a>
+                        <a href="tel:{{ get_field('contatto-pisa-tel',  get_page_by_title('Opzioni')) }}">Pietro: {{ get_field('contatto-pisa-tel',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                     <div class="sede-contatti">
                         <img src="@asset('images/email.png')" alt="email" class="email">
-                        <a href="mailto:pisa.policardiateatro@gmail.com">pisa.policardiateatro@gmail.com</a>
+                        <a href="mailto:{{ get_field('contatto-pisa-mail',  get_page_by_title('Opzioni')) }}">{{ get_field('contatto-pisa-mail',  get_page_by_title('Opzioni')) }}</a>
                     </div>
                 </div>{{-- fine sede 4 --}}
             </div>

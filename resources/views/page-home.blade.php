@@ -10,7 +10,7 @@
             </div>    
             <div class="col-sm-12 col-md-6 slider">
                 @php
-                    $upload = wp_upload_dir()['baseurl'] . '/2019/01/';
+                    $upload = wp_upload_dir()['baseurl'] . '/2019/02/';
                 @endphp
                 <div class="owl-carousel owl-theme owl-carousel-home">
                         @php echo '<div class="item"><img src="'.$upload.'policardia1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
@@ -51,11 +51,11 @@
             </div>    
             <div class="col-sm-12 col-md-6 slider">
                 <div class="owl-carousel owl-theme owl-carousel-home">
-                    @php echo '<div class="item"><img src="'.$upload.'cci1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'cci2.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'cci3.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'cci4.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
-                    @php echo '<div class="item"><img src="'.$upload.'cci5.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci1-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci2-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci3-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci4-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
+                    @php echo '<div class="item"><img src="'.$upload.'cci5-1.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                     @php echo '<div class="item"><img src="'.$upload.'cci6.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                     @php echo '<div class="item"><img src="'.$upload.'cci7.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
                     @php echo '<div class="item"><img src="'.$upload.'cci8.jpg" alt="policardia slider" class="bw width-250"></div>'; @endphp
