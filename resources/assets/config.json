@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/policardia/web/app/themes/Policardia",
+  "publicPath": "/policardia//web/app/themes/Policardia",
   "devUrl": "http://localhost:3030",
   "proxyUrl": "http://localhost:3030",
   "cacheBusting": "[name]_[hash:8]",

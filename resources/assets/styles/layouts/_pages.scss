@@ -388,23 +388,28 @@ a.section_title_link {
     .sede-contatti {
       display: flex;
       align-items: center;
+      justify-content: center;
 
       img.email {
         width: 35px;
         height: 35px;
-        margin: 5px 5px 5px 0;
+        margin: 20px 20px 20px 0;
       }
 
       img.tel {
         width: 35px;
         height: 50px;
-        margin: 5px 5px 5px 0;
+        margin: 20px 20px 20px 0;
       }
 
       a {
         color: map-get($map: $theme-colors, $key: secondary);
         transition: all 300ms;
-        font-size: 18px;
+        font-size: 24px;
+
+        @media (max-width: $screen_tablet) {
+          font-size: 18px;
+        }
 
         @media (max-width: $screen_phone) {
           font-size: 12px;
@@ -549,4 +554,75 @@ a.section_title_link {
 
 .titolo-contatto {
   color: map-get($map: $theme-colors, $key: secondary);
+}
+
+/* single page spettacolo */
+
+.top-image {
+  width: 90%;
+  height: auto;
+}
+
+.sub-title {
+  font-size: 24px;
+}
+
+.metadati {
+  text-align: left;
+}
+
+.citazione-spettacolo {
+  font-style: italic;
+  color: map-get($map: $theme-colors, $key: secondary);
+}
+
+.titolo-note {
+  font-size: 20px;
+}
+
+.end_page_buttons_foto {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  .spettacoli_button {
+    height: 300px;
+    transition: all 300ms;
+    background-image: url(../../images/tasto_spettacoli.png); //(valore di default); override nell'html
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:hover {
+      background-image: url(../../images/tasto_spettacoli_copy.png); //(valore di default); override nell'html
+      cursor: pointer;
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-image: none !important;
+    }
+  }
+}
+
+.frame-video {
+  display: inline-block;
+  width: 100%;
+  margin-left: 0;
+
+  @media (min-width: $screen_tablet) {
+    max-width: 54%;
+  }
+
+  iframe {
+    display: inline-block;
+    width: 100%;
+    margin-top: 100px;
+
+    @media (min-width: $screen_tablet) {
+      display: inline;
+    }
+  }
 }

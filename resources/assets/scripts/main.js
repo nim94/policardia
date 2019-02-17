@@ -1,7 +1,5 @@
 // import external dependencies
-import 'jquery';
 import 'owl.carousel2';
-import 'lightbox2';
 
 // Import everything from autoload
 import './autoload/**/*';

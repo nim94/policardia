@@ -18,7 +18,7 @@
                         @endphp
                     </div>
                     <div>
-                    <h3 class="nome_attore">{{ get_the_title() }}</h3>
+                    <h3 class="nome_attore">{!! get_the_title() !!}</h3>
                         <div class="descrizione_attore">
                             @php the_excerpt() @endphp 
                         </div>

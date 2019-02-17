@@ -24,6 +24,16 @@ h3 {
   color: map-get($map: $theme-colors, $key: primary);
 }
 
+h5 {
+  font-size: 1em;
+  color: map-get($map: $theme-colors, $key: primary);
+  display: inline;
+}
+
+strong.strong-gold {
+  color: map-get($map: $theme-colors, $key: primary);
+}
+
 img.bw {
   filter: grayscale(100%);
   transition: 300ms all;
